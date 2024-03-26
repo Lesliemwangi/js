@@ -1,7 +1,7 @@
 /**
  * Data structures
  *
- * Allows us to represnet other forms of data
+ * Allows us to represent other forms of data
  * like the lists(arrays) and collections(objects)
  */
 
@@ -35,11 +35,11 @@ console.log(students[0]);
 
 console.log(cars[1]);
 
-cars[2] = "Porche";
+cars[2] = "Porsche";
 
 cars[3] = "Tesla";
 
-cars[5] = "Ferari";
+cars[5] = "Ferrari";
 
 console.log(cars);
 
@@ -55,7 +55,7 @@ const colors = ["magenta", "purple"];
 colors.push("blue", "violet");
 console.log(colors);
 
-// 2. unshift() - add one or more elements at the beggining of an array
+// 2. unshift() - add one or more elements at the beginning of an array
 colors.unshift("red", "yellow");
 console.log(colors);
 
@@ -70,7 +70,7 @@ console.log(deletedColor);
 
 console.log(colors);
 
-// 2. shift - removes the elements at the beggining of an array
+// 2. shift - removes the elements at the beginning of an array
 colors.shift();
 colors.shift();
 colors.shift();
@@ -165,16 +165,39 @@ for (let i = 0; i < scores.length; i++) {
 for (const score of scores) {
   console.log(score);
 }
+
 for (const letter of 'code') {
     console.log(letter);
 }
 
+for (const letter in 'code') {
+    console.log(letter);
+}
+
+
+// const str = 'code'
+// console.log(str[o]);
+// console.log(str.charAt(0));
+
+// for (const letter in str) {
+//     console.log(letter);
+//     console.log(str[letter]);
+//     console.log(str.charAt(letter));
+// }
+
+
 // object iteration using for...in
 const person = {
     firstName: 'Leslie',
-    lastName: 'Mwangi'
+    lastName: 'Mwangi',
+    age: 34,
 }
-for (const iterator in person) {
-   console.log(iterator);
-   console.log(person[iterator]);
+
+const key = 'age'
+
+console.log(person['age']);
+
+for (const key in person) {
+   console.log(key);
+   console.log(person[key]);
 }
