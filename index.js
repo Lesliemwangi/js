@@ -1,7 +1,7 @@
 /**
  * Data types:
  *
- * Undefined - Something thet hasn't been defined. A variable that hasn't been set to be anything yet
+ * Undefined - Something that hasn't been defined. A variable that hasn't been set to be anything yet
  *
  * Null - Nothing. A variable that has been set to be something  but it is nothing
  *
@@ -208,7 +208,7 @@ var myLastName = "Lizzie";
 console.log(myLastName);
 
 // ESCAPING LITERAL QUOTES IN STRINGS
-// if you want to ecsape a quote, you put \(backslash) before the quotation mark
+// if you want to escape a quote, you put \(backslash) before the quotation mark
 var myStr = 'I am a "double quoted " string inside " double quotes';
 console.log(myStr);
 
@@ -288,26 +288,80 @@ function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
 }
 
 // STORE MULTIPLE VALUES WITH ARRAYS
-var ourArray = ["John", 23]
+var ourArray = ["John", 23];
 console.log(ourArray);
 
 // NESTED ARRAYS
-var ourArray = [["the universe", 42], ["everything", 101010]]
+var ourArray = [
+  ["the universe", 42],
+  ["everything", 101010],
+];
 console.log(ourArray);
 
 // ACCESS ARRAY DATA WITH INDEXES
-var ourArray = [50, 60, 70]
-var ourData = ourArray[2]
+var ourArray = [50, 60, 70];
+var ourData = ourArray[2];
 console.log(ourArray);
 console.log(ourData);
 
 // MODIFY ARRAY DATA WITH INDEXES
-var ourArray = [18, 64, 99]
-ourArray[3] = 45
+var ourArray = [18, 64, 99];
+ourArray[3] = 45;
 console.log(ourArray);
 
 // ACCESS MULTI-DIMENSIONAL ARRAYS WITH INDEXES
-var ourArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]]
-var ourData = ourArray[2][1]
+var ourArray = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+  [10, 11, 12],
+];
+var ourData = ourArray[2][1];
 console.log(ourArray);
 console.log(ourData);
+
+// MANIPULATE ARRAYS WITH PUSH() - adds elements at the end
+var ourArray = ["Luciannah", "J", "cat"];
+ourArray.push(["happy", "joy"]);
+console.log(ourArray);
+
+// MANIPULATE ARRAYS WITH POP() - removes elements at the end
+var ourArray = [1, 2, 3];
+var removedFromOurArray = ourArray.pop();
+console.log(removedFromOurArray);
+console.log(ourArray);
+
+// MANIPULATE ARRAYS WITH SHIFT() - removes elements at the beginning
+var ourArray = ["Luciannah", "J", ["cat"]];
+var removedFromOurArray = ourArray.shift();
+console.log(removedFromOurArray);
+console.log(ourArray);
+
+// MANIPULATE ARRAYS WITH UNSHIFT() - adds elements at the beginning
+var ourArray = ["Luciannah", "J", "cat"];
+ourArray.unshift("Happy");
+console.log(ourArray);
+
+var ourArray = ["Luciannah", "J", "cat"];
+ourArray.shift();
+ourArray.unshift("Happy");
+console.log(ourArray);
+
+// SHOPPING LIST
+var myList = [
+  ["cereal", 3],
+  ["milk", 2],
+  ["bananas", 3],
+  ["juice", 2],
+  ["eggs", 12],
+];
+console.log(myList);
+
+// WRITE REUSABLE CODE WITH FUNCTIONS
+function ourReusableFunction() {
+  console.log('Hello, World');
+} 
+ourReusableFunction()
+ourReusableFunction()
+
+// PASSING VALUES TO FUNCTIONS WITH ARGUMENTS
