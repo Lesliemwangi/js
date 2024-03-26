@@ -279,10 +279,35 @@ var lastName = "Phoi";
 lastLetterOfLastName = lastName[lastName.length - 4];
 console.log(lastName);
 
-// WORD BLANKS
+//* WORD BLANKS
 function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
   var result = "";
-  result += "The" + myAdjective + myNoun + myVerb + "to the store" + myAdverb;
+  result += "The" + myAdjective + myNoun + myVerb + " to the store" + myAdverb;
   return result;
   console.log(wordBlanks("dog", "big", "ran", "quickly"));
 }
+
+// STORE MULTIPLE VALUES WITH ARRAYS
+var ourArray = ["John", 23]
+console.log(ourArray);
+
+// NESTED ARRAYS
+var ourArray = [["the universe", 42], ["everything", 101010]]
+console.log(ourArray);
+
+// ACCESS ARRAY DATA WITH INDEXES
+var ourArray = [50, 60, 70]
+var ourData = ourArray[2]
+console.log(ourArray);
+console.log(ourData);
+
+// MODIFY ARRAY DATA WITH INDEXES
+var ourArray = [18, 64, 99]
+ourArray[3] = 45
+console.log(ourArray);
+
+// ACCESS MULTI-DIMENSIONAL ARRAYS WITH INDEXES
+var ourArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]]
+var ourData = ourArray[2][1]
+console.log(ourArray);
+console.log(ourData);
