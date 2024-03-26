@@ -359,9 +359,38 @@ console.log(myList);
 
 // WRITE REUSABLE CODE WITH FUNCTIONS
 function ourReusableFunction() {
-  console.log('Hello, World');
-} 
-ourReusableFunction()
-ourReusableFunction()
+  console.log("Hello, World");
+}
+ourReusableFunction();
+ourReusableFunction();
 
 // PASSING VALUES TO FUNCTIONS WITH ARGUMENTS
+function ourFunctionWithArgs(a, b) {
+  console.log(a + b);
+}
+ourFunctionWithArgs(10, 5);
+ourFunctionWithArgs(30, 40);
+
+// // GLOBAL SCOPE AND FUNCTIONS
+// /* scope - visibility of variables.
+// Variables which are defined outside of a function have global scope
+// Global scope means they can be seen everywhere in your javaScript code*/
+// var myGlobal = 10;
+
+// function fun1() {
+//   var oopsGlobal = 5;
+// }
+
+// function fun2() {
+//   var output = "";
+//   if (typeof myGlobal != "undefined") {
+//     output += "myGlobal: " + myGlobal;
+//   }
+//   if (typeof oopsGlobal != "undefined") {
+//     output += "oopsGlobal: " + oopsGlobal;
+//   }
+// }
+// console.log(output);
+
+// LOCAL SCOPE AND FUNCTIONS
+

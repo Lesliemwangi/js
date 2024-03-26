@@ -146,7 +146,7 @@ console.log(days);
 // for string interpolation always use backticks (``)
 
 let count = 0;
-const scores = [34, 45, 53, 32, 54];
+const scores = [34, 45, 53, 32, 54, 67];
 console.log(scores.length);
 
 while (count < 5) {
@@ -166,14 +166,13 @@ for (const score of scores) {
   console.log(score);
 }
 
-for (const letter of 'code') {
-    console.log(letter);
+for (const letter of "code") {
+  console.log(letter);
 }
 
-for (const letter in 'code') {
-    console.log(letter);
+for (const letter in "code") {
+  console.log(letter);
 }
-
 
 // const str = 'code'
 // console.log(str[o]);
@@ -185,19 +184,101 @@ for (const letter in 'code') {
 //     console.log(str.charAt(letter));
 // }
 
-
 // object iteration using for...in
 const person = {
-    firstName: 'Leslie',
-    lastName: 'Mwangi',
-    age: 34,
-}
+  firstName: "Leslie",
+  lastName: "Mwangi",
+  age: 34,
+};
 
-const key = 'age'
+const key = "age";
 
-console.log(person['age']);
+console.log(person["age"]);
 
 for (const key in person) {
-   console.log(key);
-   console.log(person[key]);
+  console.log(key);
+  console.log(person[key]);
 }
+
+// Array iteration methods
+const copyOfScores = [...scores];
+const dayss = ["Mon", "Tue", "Wed", "Thur", "Fri"];
+
+console.log(copyOfScores);
+// 1. indexOf() - It finds the position of a given element and returns the index
+// or returns -1 if the element is not found
+console.log(copyOfScores.indexOf(25));
+const indexOfWednesday = dayss.indexOf("Wed");
+console.log(indexOfWednesday);
+
+// 2. find() - returns the first element in an array that meets a certain condition
+const score = scores.find(function (score) {
+  console.log(score);
+  if (score > 50) {
+    return score;
+  }
+});
+
+const anotherScore = scores.find((score) => score > 30);
+console.log(anotherScore);
+
+function filter(num) {
+  if (num > 60) {
+    return num;
+  }
+}
+
+const scoreGreaterThan60 = scores.find(filter);
+
+console.log(scoreGreaterThan60);
+
+//  3. filter() - finds and returns a list of elements that meet a certain condition
+const scoresOver50 = scores.filter((score) => score > 50);
+
+const student = [
+  { firstName: "Natasha", score: 50 },
+  { firstName: "Wambui", score: 65 },
+  { firstName: "Karen", score: 56 },
+  { firstName: "Leslie", score: 76 },
+  { firstName: "Lynn", score: 45 },
+];
+
+const studentsAbove55 = students.filter((student) => student['score'] > 55);
+
+const studentAbove55 = students.find((student) => student['score'] > 55);
+
+console.log(studentAbove55);
+
+console.log(students.length);
+
+console.log(studentsAbove55);
+
+console.log(scores);
+console.log(scoresOver50);
+
+// 4. map() -iterates through the whole array modifying each element and 
+// returns the modified array
+const modifiedScores = scores.map((score) => score + 2)
+// const modifiedStudents = students.map((student) => ({ 
+//     ...student,
+//     firstName: student.firstName.toUpperCase(),
+// }))
+
+// console.log(modifiedStudents);
+console.log(modifiedScores);
+console.log(scores);
+
+// 5. reduce() - create a summary or aggregation  of values in an array
+const sum = scores.reduce((prevValue, currValue) => {
+  console.log(prevValue);
+  console.log(currValue);
+  return prevValue + currValue
+}, 0)
+
+console.log(sum);
+
+// 6. forEach
+scores.forEach((score,index) => {
+  console.log(score);
+  console.log(index);
+})
