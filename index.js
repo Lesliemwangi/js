@@ -11,8 +11,38 @@
  *
  * Symbol - An immutable primitive value that is unique
  *
- * Number - Number
- *
+ * Number - Number (<, >, =, =<, =>)
+ * logic operators - strict equality, strict inequality, loose equality, loose inequality
+ * strict equality - compares the value and data(===)
+ * strict inequality (|==)
+ * loose equality (and(&&), or(||), not(!), double bang(!!))
+ * 
+ * Assignment Operators
+      Operator Example	    Same As
+       =	    x = y	    x = y
+       +=	    x += y	    x = x + y
+       -=	    x -= y	    x = x - y
+       *=	    x *= y	    x = x * y
+       /=	    x /= y	    x = x / y
+       %=	    x %= y	    x = x % y
+       *=	    x *= y 	x = x ** y
+
+* Shift Assignment Operators
+      Operator	Example	    Same As
+       <<=	    x <<= y	    x = x << y
+       >>=	    x >>= y 	x = x >> y
+       >>>=	    x >>>= y	x = x >>> y
+* comparison Operator  
+        ==	equal to
+        ===	equal value and equal type
+        !=	not equal
+        !==	not equal value or not equal type
+        >	greater than
+        <	less than
+        >=	greater than or equal to
+        <=	less than or equal to
+        ?	ternary operator
+ * 
  * Object - Can store a lot of different key value pairs
  *
  */
@@ -393,4 +423,3 @@ ourFunctionWithArgs(30, 40);
 // console.log(output);
 
 // LOCAL SCOPE AND FUNCTIONS
-

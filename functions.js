@@ -1,11 +1,11 @@
 /**
- * Fuctions
+ * Functions
  * 
  * pieces that allow reusability
  * 
- * Can accept one or more parameters separater by commas
+ * Can accept one or more parameters separate by commas
  * 
- * Parameters - variables listed in the paranthesis of functions
+ * Parameters - variables listed in the parenthesis of functions
  * Arguments -values that are passed when calling/invoking a function
  */
 
@@ -31,7 +31,7 @@ console.log(546 + 341)
 function sum(numOne, numTwo) {
     console.log(numOne + numTwo)
     return 0
-    return numOne + numTwo  // it stops executionof a function
+    return numOne + numTwo  // it stops execution a function
     console.log(anything)  // will not be executed
 }
 

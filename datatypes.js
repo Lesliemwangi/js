@@ -1,23 +1,23 @@
 //
 
 // 1. strings
-const firstname = "Jane";
-const lastname = " Doe";
-const fullname = "Jane Doe";
+const firstName = "Jane";
+const lastName = " Doe";
+const fullName = "Jane Doe";
 
-console.log(typeof firstname);
-console.log(typeof fullname);
+console.log(typeof firstName);
+console.log(typeof fullName);
 
-// strig concatenation using + operator
-console.log(firstname + " " + lastname);
+// string concatenation using + operator
+console.log(firstName + " " + lastName);
 
 // curly brackets -> {}
-// paranthesis (soft brackets) -> ()
+// parenthesis (soft brackets) -> ()
 // square brackets -> []
 
 // string interpolation - injecting values into strings
-console.log(`${firstname} ${lastname}, age is ${100 - 45}`);
-console.log("${firstname} ${lastname}, age is ${100 -45}");
+console.log(`${firstName} ${lastName}, age is ${100 - 45}`);
+console.log("${firstName} ${lastName}, age is ${100 -45}");
 
 // 2. Numbers
 console.log(typeof 3);
@@ -28,10 +28,10 @@ console.log(typeof 45.2334);
 console.log(typeof true);
 console.log(typeof false);
 
-// 4. objects (arrays) - collection of date consistint of key values pairs
+// 4. objects (arrays) - collection of date consisting of key values pairs
 const student = {
-  firstname: "Jane",
-  lastname: "Doe",
+  firstName: "Jane",
+  lastName: "Doe",
   cohort: "SDT-FT09",
   class: "Bravo",
   studentEmail: "jane.doe@student.moringaschool.com",
@@ -45,7 +45,7 @@ const students = ["John", "Leslie", "Imani", 34];
 const scores = [23, 45, 34, 34];
 console.log(typeof students);
 
-// 5. null - reperesents an intentionally absent value
+// 5. null - represents an intentionally absent value
 const newStudent = null;
 console.log(newStudent);
 

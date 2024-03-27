@@ -3,7 +3,7 @@
  * A bunch of blocks that you keep together to perform something which otherwise will be very, very repeated in the code
  * 
  * Functions & Methods
- * Declaration & Defination - creating a function  with  bunch of logic 
+ * Declaration & Definition - creating a function  with  bunch of logic 
  * 
  * Arguments & Parameters
  * Parameter - something that you pass to a function while declaring/ defining the function (function printMe(param)) 
@@ -30,9 +30,9 @@ printMeAgain('print')
  * 
  * let p = x() - in this expression, we are having a variable called 'p' and the 'p' value is not the function but the value we get from executing a function
  * 
- * A function name along with a paranthesis means executing calling/ invoking a function
+ * A function name along with a parenthesis means executing calling/ invoking a function
  * 
- * a function name without a paranthesis means its just the string representation of a function 
+ * a function name without a parenthesis means its just the string representation of a function 
  * 
  */
 
