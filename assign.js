@@ -15,9 +15,9 @@ console.log(isItLetter('0'))
 function isItLetter(character) {
   return /[a-zA-Z]/.test(character);
 }
-console.log(isItLetter(0));
+console.log(isItLetter('9y'));
 
 // Trial 3
-console.log(/^[a-zA-Z]$/.test("u"));
+console.log(/^[a-zA-Z]$/.test("5u"));
 
 // Trial 4
